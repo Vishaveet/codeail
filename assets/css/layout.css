@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 body #layout-main {
-  height: 100vh;
+  height: 100%;
 }
 body #header-container {
   background-color: blue;
