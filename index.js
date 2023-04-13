@@ -1,6 +1,7 @@
 const express =require('express');
 const cookieParser=require('cookie-parser');
 const port=8000;
+const path=require('path');
 const app=express();
 
 app.use(express.urlencoded({extended:false}));
@@ -16,7 +17,11 @@ const db=require('./config/mongoose');
 const session=require('express-session');
 const passport=require('passport');
 const passportLocal=require('./config/passport-local-strategy');
+const passportjwt=require('./config/passport-jwt-strategy');
+const passportGoogle=require('./config/passport-google-oauth2-strategy');
 const MongoStore=require('connect-mongo')(session);
+const flash=require('connect-flash');
+const customMware=require('./config/middleware');
 // const sassMiddleware=require('node-sass-middleware');
 
 // app.use(sassMiddleware({
@@ -61,6 +66,16 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(passport.setAuthenticatedUser);
+
+app.use(flash());
+app.use(customMware.setFlash);
+
+// make the uploads path is availble to the browser
+
+// app.use('/uploads',express.static(__dirname+'/uploads'));
+// app.use('/uploads',express.static(path.join(__dirname,'/uploads')));
+app.use('/uploads',express.static(__dirname+'/uploads'));
+
 app.use('/',require('./routes'))
 
 app.listen(port,function(err){
