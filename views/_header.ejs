@@ -8,7 +8,7 @@
                 <div id="list1">
                     <%if(locals.user){%>
                         <li>
-                            <a href="/users/Profile">
+                            <a href="/users/Profile/<%= user.id%>">
                                 <%=user.name%>
                             </a>
                         </li>

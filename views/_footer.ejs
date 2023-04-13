@@ -5,9 +5,11 @@
             <div id="home">
                 <a href="/">Home</a>
             </div>
+            <% if(locals.user){%>
             <div id="profile">
-                <a href="/users/profile">Profile</a>
+                <a href="/users/profile/<%= locals.user.id%>">Profile</a>
             </div>
+            <%}%>
         </div>
     </div>
 </footer>

@@ -1,18 +1,32 @@
-    <div class="container">
+<link rel="stylesheet" href="/css/user_sign_up.css">
+<div id="container">
+    <div id="img-container">
+        <img id="img" src="https://media.istockphoto.com/id/1364159707/photo/login-online-form-cyber-security-concept-image.jpg?b=1&s=170667a&w=0&k=20&c=RPBQKIH-x-atxNwH_qucKlVw3hwSAgwXfexmzUs1QM4=" alt="img">
+        </div>
+    <div id="form-container">
         <div class="heading">
             <h1>Sign Up</h1>
         </div>
         <div class="containe">
             <form action="/users/create" method="post">
             <input type="text" name="name" placeholder="Your name" required>
-            <hr>
+            <br>
+            <br>
             <input type="email" name="email" placeholder="Your Email" required>
-            <hr>
+            <br>
+            <br>
             <input type="password" name="password" placeholder="password" required>
-            <hr>
+            <br>
+            <br>
             <input type="password" name="confirm_password" placeholder="confirm_password" required>
-            <hr>
-            <input type="submit" value="Sign Up">
+            <br>
+            <br>
+            <input id="submit-button" type="submit" value="Sign Up">
             </form>
         </div>
+        <p>
+            <a href="/users/auth/google">Google Sign-in/Google Sign-up</a>
+        </p>
+    </div>
+    
     </div>
