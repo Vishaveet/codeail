@@ -1,0 +1,41 @@
+body{
+    /* background-color:gainsboro; */
+    background-image: url(https://wallpapers-hub.art/wallpaper-images/427863.jpg);
+    background-size: cover;
+}
+.container{
+    /* margin-top: 5px;
+    margin-left: 20%; */
+    margin: 10%;
+    height:80%;
+    width: 80%;
+    background-color: aqua;
+    display: flex;
+}
+#img-container{
+    width: 50%;
+}
+#img{
+    height: 100%;
+    /* width: 50%; */
+}
+#form-container{
+    padding: 20px;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+#form-container h1{
+  color: aliceblue;
+}
+#form-container input {
+
+    padding: 7px;
+    border-radius: 5px;
+    
+}
+#submit-button{
+    background-color: blue;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+}

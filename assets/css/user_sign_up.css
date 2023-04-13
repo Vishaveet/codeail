@@ -1,0 +1,42 @@
+body{
+    /* background-color: antiquewhite; */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3T5ng-WwFv2SfOAMIx093iwRNzOzw0hVzFpHWtidjw&usqp=CAU&ec=48665699);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container{
+
+    margin: 10%;
+    height: 80%;
+    width: 80%;
+    background-color: aqua;
+    display: flex;
+}
+#img-container{
+
+    width: 50%;
+}
+#img{
+    height: 100%;
+    width: 100%;
+}
+#form-container{
+   width: 50%;
+   background-color: white;
+}
+.heading h1{
+    text-align: center;
+    color: rgb(31, 70, 196);
+}
+.containe{
+text-align: center;
+}
+.containe input {
+    padding: 10px;
+    border-radius: 5px;
+}
+#submit-button{
+    background-color: blue;
+    color: white;
+}
